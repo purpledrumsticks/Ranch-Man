@@ -110,6 +110,12 @@ var render = function() {
 	if(ranchReady) {
 		context.drawImage(imgRanch, ranch.x, ranch.y);
 	}
+
+	context.fillStyle = "rgb(0, 0, 0)";
+	context.font = "24px Helvetica";
+	context.textAlign = "left";
+	context.textBaseline = "top";
+	context.fillText("Ranch Consumed: " + ranchCaught, 400, 32);
 };
 
 //The Main Game Loop
